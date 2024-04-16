@@ -386,6 +386,7 @@ def update_forecast_plot(selected_model):
     fig = px.line(df_23, x='Date', y=[df_23['Power [MW]'], df_23[model_pred_column]], labels={'value': 'Power [kW]'}, title=f'{forecast_models[selected_model]} Forecast')
     return fig
 
+app.server
 if __name__ == '__main__':
     app.run_server(debug=False)
 
